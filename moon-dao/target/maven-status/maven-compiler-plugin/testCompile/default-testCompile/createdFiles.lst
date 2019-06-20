@@ -1,0 +1,10 @@
+edu\zut\cs\software\sun\Register\dao\PeopleDaoTest.class
+edu\zut\cs\software\sun\order\dao\OrderDaoTest.class
+edu\zut\cs\software\sun\show\dao\AdvertisingDaoTest.class
+edu\zut\cs\software\sun\Register\dao\ThingDaoTest.class
+edu\zut\cs\software\sun\order\dao\CustomerDaoTest.class
+edu\zut\cs\software\sun\sale\dao\CouponDaoTest.class
+edu\zut\cs\software\sun\sale\dao\GoodsDaoTest.class
+edu\zut\cs\software\sun\show\dao\PageDaoTest.class
+edu\zut\cs\software\sun\Warehouse\dao\GoodDaoTest.class
+edu\zut\cs\software\sun\Warehouse\dao\ShelvesDaoTest.class

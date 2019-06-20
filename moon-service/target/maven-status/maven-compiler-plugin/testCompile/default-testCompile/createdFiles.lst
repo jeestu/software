@@ -1,0 +1,8 @@
+edu\zut\cs\software\sun\sale\service\generator\GoodsGenerator.class
+edu\zut\cs\software\sun\Warehouse\service\generator\Goodsgenerator.class
+edu\zut\cs\software\sun\order\service\CustomerManagerTest.class
+edu\zut\cs\software\sun\order\service\OrderManagerTest.class
+edu\zut\cs\software\sun\sale\service\CouponManagerTest.class
+edu\zut\cs\software\sun\Warehouse\service\ShelvesManagerTest.class
+edu\zut\cs\software\sun\show\service\ShowMangerTest.class
+edu\zut\cs\software\sun\Warehouse\service\GoodManagerTest.class
