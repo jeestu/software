@@ -11,6 +11,7 @@ import edu.zut.cs.software.moon.base.service.impl.GenericManagerImpl;
 import edu.zut.cs.software.sun.Warehouse.dao.ShelvesDao;
 import edu.zut.cs.software.sun.Warehouse.domain.Shelves;
 
+
 @Service
 @Transactional
 public class ShelvesManagerlmpl extends GenericManagerImpl<Shelves,Long> implements ShelvesManager{

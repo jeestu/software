@@ -5,6 +5,7 @@ import edu.zut.cs.software.moon.base.dao.GenericDao;
 import edu.zut.cs.software.moon.base.domain.BaseEntity;
 import edu.zut.cs.software.moon.base.service.GenericManager;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,6 +29,7 @@ import java.util.List;
 @Transactional
 public class GenericManagerImpl<T extends BaseEntity, PK extends Serializable> implements GenericManager<T, PK> {
 
+	@Autowired
 	protected GenericDao<T, PK> dao;
 
 	public void delete(PK id) {

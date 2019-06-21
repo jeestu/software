@@ -11,8 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.annotation.Rollback;
 
 import edu.zut.cs.software.moon.base.dao.GenericDaoTestCase;
-import edu.zut.cs.software.sun.Warehouse.dao.ShelvesDao;
 import edu.zut.cs.software.sun.Warehouse.domain.Shelves;
+
 
 
 @Rollback(value = false)
@@ -27,7 +27,7 @@ public class ShelvesDaoTest extends GenericDaoTestCase<Long, Shelves,ShelvesDao>
 		@Test
 	    public void sava(){
 			Shelves shelves = new Shelves();
-			shelves.setShelvesName("Â§èÂ§©");
+			shelves.setShelvesName("4∫≈");
 			shelves.setId((long) 111);
 			shelves.setDateCreated(null);
 			shelves.setDateModified(null);

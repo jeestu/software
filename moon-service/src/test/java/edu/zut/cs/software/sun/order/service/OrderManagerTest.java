@@ -36,7 +36,7 @@ public class OrderManagerTest extends GenericManagerTestCase<Long, Order, OrderM
         Order order = new Order();
         
         order.setOrder_Name("dd");
-        order.setCustomer(customerManager.findById((long) 388));
+        order.setCustomer(customerManager.findById((long) 671));
         orderManager.save(order);
     }
 

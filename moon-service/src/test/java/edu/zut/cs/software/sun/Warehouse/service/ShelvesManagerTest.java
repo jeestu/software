@@ -34,7 +34,7 @@ public class ShelvesManagerTest extends GenericManagerTestCase<Long, Shelves,She
 	  @Test
 	    public void save() {
 		    Shelves shelves = new Shelves();
-		    shelves.setShelvesName("è‰è“");
+		    shelves.setShelvesName("°ô°ôÌÇ");
 		    shelvesManager.save(shelves);
 	    }
 	  @Test
