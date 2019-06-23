@@ -59,6 +59,7 @@ $(document).ready(function(){
         <th><input name="" type="checkbox" value="" checked="checked"/></th>
         <th>ID<i class="sort"><img src="<%=basePath%>images/px.gif" /></i></th>
         <th>商品名称</th>
+        <th>商品数量</th>
         <th>货架信息</th>
         <th><a href="${pageContext.request.contextPath}/site/tosave">添加</a></th>
 
@@ -70,6 +71,7 @@ $(document).ready(function(){
         <td><input name="" type="checkbox" value="" /></td>
         <td>${waregoods.id}</td>
         <td>${waregoods.commoditName}</td>
+        <td>${waregoods.amount}</td>
 		<td>${waregoods.shelves}</td>
         <td><a href="${pageContext.request.contextPath}/warehouse/delete.do?id=${waregoods.id}" class="tablelink">删除</a>   
             

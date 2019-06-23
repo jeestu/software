@@ -28,14 +28,14 @@ public class ShelvesgoodDaoTest extends GenericDaoTestCase<Long, Shelvesgoods,Sh
 	  
 	  
 
-		/**@Test
+		@Test
 	    public void sava(){
 	
 			Shelvesgoods good = new Shelvesgoods();
 		
-			good.setCommoditName("豆干");
-			good.setShelves(shelvesDao.getOne((long) 783));
-			
+			good.setCommoditName("巧克力");
+			good.setShelves(shelvesDao.getOne((long) 849));
+			good.setAmount(240);
 	        goodDao.save(good);
 	    }
 	  
@@ -50,7 +50,7 @@ public class ShelvesgoodDaoTest extends GenericDaoTestCase<Long, Shelvesgoods,Sh
 	    }
 	   
 	
-	    @Test
+	    /**@Test
 	    public void deleteById(){
 	    	goodDao.deleteById((long) 844);
 	    }**/

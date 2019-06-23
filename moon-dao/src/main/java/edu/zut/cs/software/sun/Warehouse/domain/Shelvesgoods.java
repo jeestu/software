@@ -20,6 +20,15 @@ public class Shelvesgoods extends BaseEntity{
 	
 	private static final long serialVersionUID = 5521218170469636598L;
 	
+	   private int amount;
+		public int getAmount() {
+		return amount;
+	   }
+	 public void setAmount(int amount) {
+		this.amount = amount;
+	  }
+
+
 		private Long id;
 		@Column(name="COMMODIT_NAME")
 		private String commoditName;

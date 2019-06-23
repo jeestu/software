@@ -33,17 +33,18 @@ public class ShelvesgoodManagerTest extends GenericManagerTestCase<Long, Shelves
 
 	 
 	 
-	 /**@Test
+	 @Test
 	    public void save(){
 	        Shelvesgoods good = new Shelvesgoods();
-	        good.setCommoditName("薯片");
-	        good.setShelves(shelvesManager.findById((long) 848));
+	        good.setCommoditName("QQ糖");
+	        good.setAmount(160);
+	        good.setShelves(shelvesManager.findById((long) 828));
 	        goodManager.save(good);
 	    }
 
 
 
-	 @Test
+	/** @Test
 	    public void findAll() {
 	        Assert.assertNotNull(goodManager.findAll());
 	        logger.info(goodManager.findAll());
