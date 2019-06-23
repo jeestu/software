@@ -4,11 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.ui.Model;
+
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import edu.zut.cs.software.moon.base.web.spring.controller.GenericController;
 import edu.zut.cs.software.moon.sale.service.GoodsManager;
@@ -24,33 +23,35 @@ public class GoodsController extends GenericController<Goods, Long, GoodsManager
 	@RequestMapping(path = "index")
     public String index(){
         System.out.println("hello");
-        return "index";
+        return "main/index";
     }
-
-
-
-    @RequestMapping(path = "/info/{id}",method = RequestMethod.GET,produces = "application/json;charset=utf-8")
-    public @ResponseBody Goods getOne(@PathVariable(value = "id") Long id) {
-        Goods expenditure = this.goodsManager.findById(id);
-        return expenditure;
-
+    @RequestMapping("/findgoods")
+	public String findAllGoods(Model model) {
+		List<Goods> goodList=this.goodsManager.findAll();
+		for(Goods goods:goodList) {
+			System.out.println(goods);
+		}
+		model.addAttribute("goodList", goodList);
+		return "sale/findgoods";
+	}
+    
+    @RequestMapping("/delete")
+	public String deleteGoods(Long id) {
+		this.goodsManager.delete(id);
+		return "forward:findgoods";
+	}
+    
+    @RequestMapping("/toadd")
+    public String toadd(){
+        return "sale/addgoods";
     }
+    
+    @RequestMapping("/addgoods")
+    public String Addorder(Goods goods){
+        Goods good=goodsManager.save(goods);
 
-
-    @RequestMapping(path = "info", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
-   public @ResponseBody
-    List<Goods> getAll(){
-        List<Goods> all = this.goodsManager.findAll();
-        return all;
+        ModelAndView s=new ModelAndView();
+        s.addObject(good);
+        return "forward:findgoods.do";
     }
-
-	/*
-	 * @RequestMapping(path = "info/message", method = RequestMethod.GET, produces =
-	 * "application/json;charset=utf-8") public @ResponseBody List<Goods>
-	 * getAllByMessage(@RequestParam(value = "message") String message){
-	 * List<Expenditure> all; List<Expenditure> goodNameAll; all =
-	 * this.expenditureManger.getByDealPerson(message); goodNameAll =
-	 * this.expenditureManger.findByGoods(message); all.addAll(goodNameAll); return
-	 * all; }
-	 */
 }

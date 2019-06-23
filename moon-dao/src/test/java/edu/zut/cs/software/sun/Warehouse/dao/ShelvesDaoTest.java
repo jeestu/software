@@ -24,10 +24,10 @@ public class ShelvesDaoTest extends GenericDaoTestCase<Long, Shelves,ShelvesDao>
 	  @Autowired
 	  ShelvesDao shelvesDao;
 
-		@Test
+		/**@Test
 	    public void sava(){
 			Shelves shelves = new Shelves();
-			shelves.setShelvesName("4ºÅ");
+			shelves.setShelvesName("4ï¿½ï¿½");
 			shelves.setId((long) 111);
 			shelves.setDateCreated(null);
 			shelves.setDateModified(null);
@@ -44,7 +44,7 @@ public class ShelvesDaoTest extends GenericDaoTestCase<Long, Shelves,ShelvesDao>
 	        if(logger.isInfoEnabled()){
 	            logger.info(shelves);
 	        }
-	    }
+	    }**/
 		
 		
 

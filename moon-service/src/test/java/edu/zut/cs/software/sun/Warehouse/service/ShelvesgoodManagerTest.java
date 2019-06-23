@@ -33,11 +33,11 @@ public class ShelvesgoodManagerTest extends GenericManagerTestCase<Long, Shelves
 
 	 
 	 
-	 @Test
+	 /**@Test
 	    public void save(){
 	        Shelvesgoods good = new Shelvesgoods();
-	        good.setCommoditName("»ðÍÈ");
-	        good.setShelves(shelvesManager.findById((long) 270));
+	        good.setCommoditName("è–¯ç‰‡");
+	        good.setShelves(shelvesManager.findById((long) 848));
 	        goodManager.save(good);
 	    }
 
@@ -47,16 +47,15 @@ public class ShelvesgoodManagerTest extends GenericManagerTestCase<Long, Shelves
 	    public void findAll() {
 	        Assert.assertNotNull(goodManager.findAll());
 	        logger.info(goodManager.findAll());
-	    }
+	    }**/
 	    
 	   
 	    
 
 	    /**@Test
 	    public void deleteById() {
-	    	goodManager.deleteById((long) 100);
-	    }//ÊÂÎñ»Ø¹ö  
-           **/
+	    	goodManager.deleteById((long) 845);
+	    }**/
 
 	 
 

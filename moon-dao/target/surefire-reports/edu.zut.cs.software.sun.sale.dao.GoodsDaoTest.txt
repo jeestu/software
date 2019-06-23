@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.zut.cs.software.sun.sale.dao.GoodsDaoTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 s - in edu.zut.cs.software.sun.sale.dao.GoodsDaoTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s - in edu.zut.cs.software.sun.sale.dao.GoodsDaoTest

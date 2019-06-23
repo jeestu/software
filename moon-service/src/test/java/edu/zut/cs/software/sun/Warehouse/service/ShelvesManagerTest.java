@@ -31,16 +31,16 @@ public class ShelvesManagerTest extends GenericManagerTestCase<Long, Shelves,She
         this.shelvesManager = manger;
     }
 	
-	  @Test
+	/**  @Test
 	    public void save() {
 		    Shelves shelves = new Shelves();
-		    shelves.setShelvesName("°ô°ôÌÇ");
+		    shelves.setShelvesName("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		    shelvesManager.save(shelves);
 	    }
 	  @Test
 	    public void findAll() {
 	        Assert.assertNotNull(shelvesManager.findAll());
 	        logger.info(shelvesManager.findAll());
-	    }
+	    }**/
 	
 }

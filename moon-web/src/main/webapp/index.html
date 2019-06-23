@@ -3,8 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-	<h4>SEVEN</h4>
+	<div id="app">{{ message }}</div>
+
+	<script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!'
+      }
+    })
+  </script>
 </body>
 </html>

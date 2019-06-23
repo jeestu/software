@@ -9,6 +9,7 @@
   	<module>moon-base</module>
   	<module>moon-dao</module>
   	<module>moon-service</module>
+  	<module>moon-client</module>
   </modules>
   
   

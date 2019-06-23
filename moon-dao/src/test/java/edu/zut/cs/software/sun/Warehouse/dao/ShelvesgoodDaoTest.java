@@ -28,7 +28,7 @@ public class ShelvesgoodDaoTest extends GenericDaoTestCase<Long, Shelvesgoods,Sh
 	  
 	  
 
-		@Test
+		/**@Test
 	    public void sava(){
 	
 			Shelvesgoods good = new Shelvesgoods();
@@ -53,7 +53,7 @@ public class ShelvesgoodDaoTest extends GenericDaoTestCase<Long, Shelvesgoods,Sh
 	    @Test
 	    public void deleteById(){
 	    	goodDao.deleteById((long) 844);
-	    }
+	    }**/
 	      
 
 	  
