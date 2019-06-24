@@ -23,22 +23,31 @@
 	
 
 	
- <form action="${pageContext.request.contextPath}/warehouse/findallwaregoods" method="post">
-     仓库
-    <input type="submit" value="查看仓库信息" >
+ <form action="${pageContext.request.contextPath}/snacks/findsnacks" method="post">
+     零食
+    <input type="submit" value="零食" >
  </form>
- <form action="${pageContext.request.contextPath}/order/findorder" method="post">
-       订单
-     <input type="submit" value="查看订单信息" >
+ <form action="${pageContext.request.contextPath}/dailyuse/finddailyuse" method="post">
+       日常用品
+     <input type="submit" value="日常用品" >
  </form>
- <form action="${pageContext.request.contextPath}/commodity/findcommodity" method="post">
-     商品
-    <input type="submit" value="查看商品信息" > 
+ <form action="${pageContext.request.contextPath}/clothes/findclothes" method="post">
+     衣服
+    <input type="submit" value="衣服" > 
 </form>
-<form action="${pageContext.request.contextPath}/goods/findgoods" method="post">
-     促销
-    <input type="submit" value="查看促销商品信息" > 
-</form>
+<form action="${pageContext.request.contextPath}/home/findhome" method="post">
+        家居
+     <input type="submit" value="家居" >
+ </form>
+<form action="${pageContext.request.contextPath}/baby/findbaby" method="post">
+       母婴
+     <input type="submit" value="母婴" >
+ </form>
+    
+    <form action="${pageContext.request.contextPath}/figure/findfigure" method="post">
+       数码
+     <input type="submit" value="数码" >
+ </form>
 </body>
 <!-- import Vue before Element -->
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
