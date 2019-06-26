@@ -1,5 +1,4 @@
 package edu.zut.cs.software.moon.order.service.impl;
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +10,7 @@ import edu.zut.cs.software.moon.order.service.OrderManager;
 
 import edu.zut.cs.software.sun.order.dao.OrderDao;
 import edu.zut.cs.software.sun.order.domain.Order;
+import edu.zut.cs.software.sun.order.domain.Order_Up;
 @Service
 @Transactional
 public class OrderManagerImpl extends GenericManagerImpl<Order, Long> implements OrderManager{
@@ -35,6 +35,23 @@ public class OrderManagerImpl extends GenericManagerImpl<Order, Long> implements
 	    
 	
 	
-	 @Override public List<Order> findAll(){return orderDao.findAll();} 
+	 @Override public List<Order> findAll(){return orderDao.findAll();}
+	@Override
+	public void upd(Order order) {
+		// TODO Auto-generated method stub
+		Order_Up.getintstan().upd(order);
+	}
+	@Override
+	public Order findone(String orderName) {
+		// TODO Auto-generated method stub
+		Order o=Order_Up.getintstan().findOne(orderName);
+		return o;
+		
+	}
+	@Override
+	public void deleteByName(String ordername) {
+		// TODO Auto-generated method stub
+		Order_Up.getintstan().del(ordername);
+	} 
 	 
 }

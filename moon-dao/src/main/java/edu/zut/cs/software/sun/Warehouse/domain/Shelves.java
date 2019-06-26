@@ -7,11 +7,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import edu.zut.cs.software.moon.base.domain.BaseEntity;
 
 
 
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @Entity
 @Table(name = "Shelves")
 public class Shelves extends BaseEntity{
@@ -44,8 +46,6 @@ public class Shelves extends BaseEntity{
 		return "Shelves [id=" + id + ","
 				+ " shelvesName=" + shelvesName + "]";
 	}
-	
-	
 	
 	
 }

@@ -51,6 +51,7 @@ $(document).ready(function(){
         <th><input name="" type="checkbox" value="" checked="checked"/></th>
         <th>ID<i class="sort"><img src="<%=basePath%>images/px.gif" /></i></th>
         <th>订单名称</th>
+        <th>订单时间</th>
         <th>顾客信息</th>
         <th><a href="${pageContext.request.contextPath}/order/toadd">添加</a></th>
 
@@ -62,8 +63,10 @@ $(document).ready(function(){
         <td><input name="" type="checkbox" value="" /></td>
         <td>${order.id}</td>
         <td>${order.order_Name}</td>
+        <td>${order.orderTimer }
         <td>${order.customer}</td>
         <td><a href="${pageContext.request.contextPath}/order/delete.do?id=${order.id}" class="tablelink">删除</a>
+            <a href="${pageContext.request.contextPath}/order/toupdateorder.do?ORDERNAME=${order.order_Name}">修改</a>
         </td>
         </tr>
        </c:forEach>

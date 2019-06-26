@@ -48,17 +48,21 @@ public class ShelvesgoodManagerTest extends GenericManagerTestCase<Long, Shelves
 	    public void findAll() {
 	        Assert.assertNotNull(goodManager.findAll());
 	        logger.info(goodManager.findAll());
-	    }**/
+	    }
 	    
 	   
 	    
 
-	    /**@Test
+	   @Test
 	    public void deleteById() {
-	    	goodManager.deleteById((long) 845);
+	    	goodManager.deleteById((long) 940);
 	    }**/
 
-	 
+	 @Test
+	 public void findById() {
+	    	goodManager.findById((long) 940);
+	    	
+	    }
 
 }
 

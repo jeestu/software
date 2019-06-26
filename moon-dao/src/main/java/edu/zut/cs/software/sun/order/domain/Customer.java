@@ -7,8 +7,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import edu.zut.cs.software.moon.base.domain.BaseEntity;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
+import edu.zut.cs.software.moon.base.domain.BaseEntity;
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @Entity
 @Table(name="t_customer")
 public class Customer extends BaseEntity {

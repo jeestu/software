@@ -24,6 +24,7 @@ public class Order extends BaseEntity {
 	private Long id;
 	private String order_Name;
 	private Customer customer;
+	private String orderTimer;
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Id
 	public Long getId() {
@@ -31,6 +32,13 @@ public class Order extends BaseEntity {
 	}
 	public void setId(Long id) {
 		this.id = id;
+	}
+	@Column(name="ORDERTIME")
+	public String getOrderTimer() {
+		return orderTimer;
+	}
+	public void setOrderTimer(String orderTimer) {
+		this.orderTimer = orderTimer;
 	}
 	@Column(name="ORDERNAME")
 	public String getOrder_Name() {
@@ -47,10 +55,15 @@ public class Order extends BaseEntity {
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
+//	@Override
+//	public String toString() {
+//		return "Order [id=" + id + ", order_Name=" + order_Name + ", customer=" + customer + "]";
+//	}
+//	
 	@Override
 	public String toString() {
-		return "Order [id=" + id + ", order_Name=" + order_Name + ", customer=" + customer + "]";
+		return "Order [id=" + id + ", order_Name=" + order_Name + ", customer=" + customer + ", orderTimer="
+				+ orderTimer + "]";
 	}
-	
 
 }

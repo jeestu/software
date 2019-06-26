@@ -61,7 +61,7 @@ $(document).ready(function(){
         <th>商品名称</th>
         <th>商品数量</th>
         <th>货架信息</th>
-        <th><a href="${pageContext.request.contextPath}/site/tosave">添加</a></th>
+        <th><a href="${pageContext.request.contextPath}/warehouse/toadd">添加</a></th>
 
         </tr>
         </thead>

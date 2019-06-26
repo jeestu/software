@@ -9,8 +9,9 @@
 </head>
 <body>
 <form action="${pageContext.request.contextPath}/order/addorder" method="post"><%--//添加或修改完之后返回的页面--%>
-    订单号:<input id="id" type="text" value="${order.id}" name="orderID"><br>
-    订单名:<input id="order_Name" type="text" value="${order.order_Name}" name="orderName"><br>
+   
+    订单名:<input id="order_Name" type="text" name="order_Name"><br>
+    订单时间:<input id="orderTimer" type="text" name="orderTimer">
    
     <input type="submit"value="确认添加">
 </form>
